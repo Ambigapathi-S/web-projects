@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Counter</title>
+  </head>
+  <body>
+        <p id="count" style="text-align: center;font-weight: 800;font-size: 55px;margin-bottom: 0;">0</p><br>
+        <div style="text-align: center;">
+            <button type="button" id="increase">Increase</button>
+            <button type="reset" id="reset">Reset</button>
+            <button type="button" id="decrease">Decrease</button>
+        </div>
+  </body>
+  <script>
+        let count = 0;
+        document.getElementById("increase").onclick = function() {
+            count += 1;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        document.getElementById("reset").onclick = function() {
+            count = 0;
+            document.getElementById("count").innerHTML = count;
+        }
+
+        document.getElementById("decrease").onclick = function() {
+            count -= 1;
+            document.getElementById("count").innerHTML = count;
+        }
+  </script>
+</html>

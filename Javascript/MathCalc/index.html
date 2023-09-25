@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Math Calculation</title>
+  </head>
+  <body>
+    <label for="aId">Enter Side A : </label><br />
+    <input type="text" id="sideA" /><br />
+    <label for="bId">Enter Side B : </label><br />
+    <input type="text" id="sideB" /><br /><br />
+    <button type="submit" id="submit">Submit</button><br />
+    <label for="cId" id="cId"></label><br />
+    <script>
+      document.getElementById("submit").onclick = function () {
+        a = document.getElementById("sideA").value;
+        a = Number(a);
+
+        b = document.getElementById("sideB").value;
+        b = Number(b);
+        c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+        document.getElementById("cId").innerHTML = "Side C is : " + c;
+      };
+    </script>
+  </body>
+</html>
