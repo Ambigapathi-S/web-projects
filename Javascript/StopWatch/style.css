@@ -1,0 +1,22 @@
+#timeDisplay {
+    font-size: 70px;
+    font-weight: 900;
+    margin: 0 0 3rem 0;
+}
+
+#timeContainer {
+    text-align: center;
+    background: #e91e6352;
+    padding: 3rem;
+}
+
+button {
+    padding: 10px 25px;
+    background: #E91E63;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}

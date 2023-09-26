@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>For Each</title>
+  </head>
+  <body>
+    <script>
+      let students = ["abc", "bca", "cab"];
+      students.forEach(capitalize);
+      students.forEach(print);
+
+      function capitalize(element, index, array) {
+        array[index] = element[0].toUpperCase() + element[0].substring(1);
+        console.log(array[index]);
+      }
+
+      function print(element) {
+        console.log(element);
+      }
+
+      let numbers = [1, 2, 3, 4, 5];
+      let squares = numbers.map(square);
+      let cubes = numbers.map(cube);
+
+      function square(element) {
+        return Math.pow(element, 2);
+      }
+
+      function cube(element) {
+        return Math.pow(element, 3);
+      }
+
+      squares.forEach(printf);
+      cubes.forEach(printf);
+
+      function printf(element) {
+        console.log(element);
+      }
+
+      let age = [1, 44, 33, 5, 23, 67];
+      let findAge = age.filter(checkAge);
+
+      function checkAge(element) {
+        return element > 25;
+      }
+
+      findAge.forEach(print);
+
+      function print(element) {
+        console.log(element);
+      }
+      
+    </script>
+  </body>
+</html>
