@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  position: relative;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: #fff4ee;
+  font-family: "Roboto", sans-serif;
+}
+
+.filter {
+  background-color: #ffffff;
+  padding: 2rem;
+  margin: 3rem 0 0 0;
+}
+
+.filter .form-group {
+  border: 1px solid #c7bfbf;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.filter .form-group label.control-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #222;
+  padding: 0 3px;
+}
+
+.filter .form-group .form-control,
+.filter .form-group .form-control:focus,
+.filter .form-group .form-control:hover,
+.filter .form-group .form-control:active {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  padding: 3px 0;
+  color: #848484;
+  font-size: 13px;
+  font-weight: 500;
+  appearance: auto;
+}
+
+.listItems .topSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0 1rem;
+}
+.listItems .topSection .totalList {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.listItems .topSection .totalList p {
+  margin-bottom: 0;
+}
+
+.listItems .boxItems {
+  margin: 1rem;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.listItems .boxItems .box-image {
+  position: relative;
+  padding: 0;
+}
+
+.listItems .boxItems .box-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.listItems .boxItems .content {
+  padding: 0 20px;
+}
+
+.listItems .boxItems .content p {
+  margin: 0;
+  color: #565353;
+  font-weight: 500;
+  font-family: "Open Sans";
+}
+
+.listItems .boxItems .hotelName {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 1rem 0;
+  color: #222;
+  letter-spacing: -0.5px;
+}
+
+.listItems .boxItems .hotelAddress {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #565353;
+  font-weight: 400;
+}
+
+.listItems .boxItems .phoneNo {
+  font-size: 16px;
+}
+
+.listItems .boxItems .content .reviews {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.listItems .boxItems p.reviews #rating,
+.listItems .boxItems p.age {
+  font-weight: 500;
+  color: #222;
+  font-size: 13px;
+}
+
+.listItems .boxItems .price {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.listItems .boxItems .price .priceui {
+  color: #222;
+  font-weight: 600;
+  font-family: "Open Sans";
+}
+
+.listItems .boxItems .price .priceui span {
+  color: #848484;
+  font-weight: 400;
+}
+
+.print-btn {
+  background: transparent;
+  text-transform: uppercase;
+  border: none;
+  font-size: 15px;
+  line-height: 25px;
+  color: #222;
+  font-weight: 400;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.listItems .boxItems .content p.age {
+  margin-bottom: 10px;
+}
+
+.load-center {
+  justify-content: center;
+  margin: 2rem;
+}
+
+.loadmore {
+  border: none;
+  background: #848484;
+  color: #000;
+  font-size: 15px;
+  display: inline-block;
+  width: auto;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+@media(max-width: 768px) {
+  .listItems .boxItems .price {
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+}
+
+.hidePrint {
+  display: block;
+}
+
+@media print {
+  .hidePrint {
+    display: none;
+  }
+}
