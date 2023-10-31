@@ -1,0 +1,690 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+html body {
+    background-color: #0a0a0b;
+    font-family: "Exo", sans-serif;
+    color: #fff;
+    position: relative;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+}
+
+header .container .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .container .logo img {
+    width: 25px;
+    height: 25px;
+}
+
+header .container .logo span {
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    font-weight: 500;
+}
+
+header .nav ul {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 35px;
+    list-style: none;
+    margin: 0;
+}
+
+header .nav ul li a {
+    color: #98c0d9;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.sliderSection,
+footer {
+    position: relative;
+    z-index: 10;
+}
+
+.sliderSection::before,
+footer::before {
+    position: absolute;
+    content: "";
+    background-image: url("./assets/BG_circle.png");
+    width: 500px;
+    height: 652px;
+    left: 0;
+    top: -95px;
+    z-index: 1;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sliderSection::after,
+footer::after {
+    position: absolute;
+    content: "";
+    background-image: url(./assets/BG_circle.png);
+    width: 500px;
+    height: 652px;
+    z-index: 1;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.sliderSection .car-title {
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #f1f2f3;
+}
+
+.sliderSection .car-name {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.sliderSection .car-type span {
+    color: #babec4;
+    padding: 5px;
+}
+
+.sliderSection .car-slider .slick-prev,
+.sliderSection .car-slider .slick-next {
+    background: transparent;
+}
+
+.sliderSection .car-slider .slick-next:before {
+    content: url("./assets/Right_Arrow.png");
+}
+
+.sliderSection .car-slider .slick-prev:before {
+    content: url("./assets/Left_Arrow.png");
+}
+
+.sliderSection .car-slider .slick-dots li,
+.porscheCarSliders .slick-dots li {
+    margin: 0;
+    width: 15px;
+    height: 15px;
+}
+
+.sliderSection .car-slider .slick-dots li button,
+.porscheCarSliders .slick-dots li button {
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+}
+
+.sliderSection .car-slider .slick-dots li button:before,
+.porscheCarSliders .slick-dots li button:before {
+    font-family: "slick";
+    font-size: 9px;
+    line-height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    content: "•";
+    text-align: center;
+    opacity: 0.25;
+    color: #484848;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.sliderSection .car-slider .slick-dots li.slick-active button:before,
+.porscheCarSliders .slick-dots li.slick-active button:before {
+    opacity: 0.75;
+    color: #4177dc;
+    font-size: 10px;
+}
+
+.sliderSection .car-prop span {
+    background: #111213;
+    border-radius: 100%;
+}
+
+.sliderSection .car-prop p {
+    color: #888b91;
+    text-transform: uppercase;
+}
+
+.machinesWithFutureTech {
+    padding: 5rem;
+    margin-bottom: 5rem;
+}
+
+.machinesWithFutureTech .greyBg {
+    background: #3f4143b0;
+    display: inline-flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 20px;
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+    text-align: center;
+}
+
+.machinesWithFutureTech .rightCont {
+    padding-left: 5rem;
+}
+
+.porscheBrand .head {
+    font-size: 31px;
+    text-align: center;
+    font-weight: 600;
+    width: 30%;
+    margin: auto;
+    line-height: 45px;
+}
+
+.listing-tab .slick-slide {
+    margin: 30px;
+    position: relative;
+}
+
+.listing-tab .item {
+    background-color: #111213;
+    border-radius: 20px;
+    padding: 2rem 2rem 0 2rem;
+    margin-bottom: 4rem;
+}
+
+.porscheBrand .item {
+    position: relative;
+    background-color: #111213;
+    margin: 30px;
+    border-radius: 20px;
+    padding: 2rem 2rem 0 2rem;
+}
+
+.porscheBrand .item .car_name,
+.listing-tab .listing-tab {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.porscheBrand .item .car_type,
+.listing-tab .item .car_type {
+    font-size: 18px;
+    font-weight: 400;
+    color: #babec4;
+}
+
+.porscheBrand .item .car_image,
+.listing-tab .item .car_image {
+    text-align: center;
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.porscheBrand .item .car_speed_time,
+.listing-tab .item .car_speed_time {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 5px;
+}
+
+.porscheBrand .item .car_speed_time .time,
+.porscheBrand .item .car_speed_time .speed,
+.porscheBrand .item .type,
+.listing-tab .item .car_speed_time .time,
+.listing-tab .item .car_speed_time .speed,
+.listing-tab .item .type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    color: #e6e6e6;
+    font-size: 15px;
+}
+
+.porscheBrand .item .car_price,
+.listing-tab .item .car_price {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px 0;
+    display: inline-block;
+}
+
+.porscheBrand .item .shop,
+.listing-tab .item .shop {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.porscheBrand .item::before,
+.listing-tab .item::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    background-image: url('./assets/BG_circle.png');
+    background-position: left;
+    background-size: cover;
+    width: 250px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.porscheCarSliders,
+.listing-tab {
+    margin: 3rem 0 !important;
+}
+
+.moreFeatures {
+    padding: 3rem 0;
+    position: relative;
+}
+
+.w-85 {
+    width: 85%;
+}
+
+.machinesWithFutureTech .greyBg .number {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.machinesWithFutureTech .greyBg .text {
+    font-size: 15px;
+}
+
+.machinesWithFutureTech h1 {
+    font-size: 26px;
+    font-weight: 600;
+    width: 45%;
+    word-spacing: 0px;
+    color: #f1f2f3;
+    line-height: 35px;
+}
+
+.machinesWithFutureTech p {
+    color: #babec4;
+    font-size: 19px;
+    width: 90%;
+    word-spacing: 3px;
+    padding: 1rem 0;
+}
+
+.moreFeatures h1 {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.specialOffer {
+    background-image: url('./assets/Car_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem;
+}
+
+.specialOffer h1 {
+    font-size: 30px;
+    font-weight: 600;
+    width: 60%;
+    word-spacing: 2px;
+    color: #f1f2f3;
+}
+
+.specialOffer p {
+    color: #babec4;
+    font-size: 19px;
+    width: 74%;
+    word-spacing: 3px;
+    padding: 1rem 0;
+}
+
+.specialOffer .subscribe-btn,
+.machinesWithFutureTech .subscribe-btn {
+    background: #4177dc;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.brand ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+footer::before {
+    width: 400px;
+    height: 450px;
+    top: 0;
+}
+
+footer::after {
+    width: 400px;
+    height: 450px;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer .logo img {
+    width: 25px;
+    height: 25px;
+}
+
+footer .para {
+    width: 86%;
+    font-size: 16px;
+    color: #babec4;
+    padding: 15px 0;
+}
+
+footer h3 {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer h3.followus {
+    color: #93b1eb;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li a {
+    color: #babec4;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 35px;
+}
+
+footer p.copyright {
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    font-size: 13px;
+    color: #888b91;
+}
+
+
+.white-bg-opac {
+    display: inline-block;
+    width: auto;
+    color: #ffffff;
+    background: #b5b5b54a;
+    padding: 15px;
+    border-radius: 20px;
+    z-index: 1;
+    width: 120px;
+}
+
+.white-bg-opac.item1 {
+    position: absolute;
+    top: 26%;
+    left: 31%;
+}
+
+.white-bg-opac.item2 {
+    position: absolute;
+    top: 32%;
+    left: 58%;
+}
+
+.white-bg-opac.item3 {
+    position: absolute;
+    top: 55%;
+    left: 33%;
+}
+
+.white-bg-opac h3 {
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.white-bg-opac p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 13px;
+    margin-bottom: 0;
+    text-align: center;
+    line-height: 15px;
+}
+
+.listing-tab li {
+    font-size: 15px;
+    background: #222;
+    padding: 5px;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.listing-tab li img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.listing-tab li.active {
+    background-color: #4177dc;
+}
+
+.listing-tab .head {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 3rem 0;
+}
+
+
+@media(max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    header .nav {
+        display: none;
+    }
+
+    header .nav.open {
+        display: block;
+        position: absolute;
+        background: #000000;
+        padding: 10px;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 600px;
+    }
+
+    header .nav.open ul {
+        flex-direction: column;
+        padding: 2rem 0;
+    }
+
+    header .nav.open+.navbar-toggle span:nth-child(2) {
+        display: none;
+    }
+
+    header .nav.open+.navbar-toggle span:nth-child(1) {
+        transform: rotate(45deg);
+    }
+
+    header .nav.open+.navbar-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -6px);
+    }
+
+    header .navbar-toggle {
+        border: none;
+        background: transparent;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 99999;
+        right: 30px;
+    }
+
+    header .navbar-toggle span {
+        width: 23px;
+        height: 3px;
+        background-color: #fafafa;
+        margin: 5px;
+        display: block;
+        border-radius: 10px;
+        line-height: 10px;
+    }
+
+    .sliderSection,
+    footer {
+        z-index: 0;
+    }
+
+    .sliderSection::before {
+        width: 320px;
+        height: 350px;
+        left: -13px;
+    }
+
+    .sliderSection::after {
+        width: 300px;
+        height: 300px;
+    }
+
+    .car-slider img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .car-slider .slick-prev {
+        left: -35px;
+    }
+
+    .car-slider .slick-next {
+        right: -35px;
+    }
+
+    .car-prop.w-25 {
+        width: 33.33% !important;
+    }
+
+    .sliderSection .car-prop p {
+        font-size: 12px;
+    }
+
+    .sliderSection {
+        padding: 2rem 0;
+    }
+
+    .machinesWithFutureTech {
+        padding: 3rem 1rem;
+        margin-bottom: 3rem;
+    }
+
+    .machinesWithFutureTech .text-end {
+        text-align: center !important;
+    }
+
+    .machinesWithFutureTech .rightCont {
+        padding: 10px;
+        margin-top: 5rem;
+    }
+
+    .machinesWithFutureTech h1,
+    .machinesWithFutureTech p,
+    .specialOffer h1,
+    .specialOffer p {
+        width: 100%;
+    }
+
+    .porscheBrand .head {
+        font-size: 25px;
+        width: 100%;
+        line-height: 35px;
+    }
+
+    .porscheCarSliders,
+    .listing-tab {
+        margin: 0rem 0 !important;
+    }
+
+    .specialOffer {
+        padding: 2rem 1rem;
+    }
+
+    .specialOffer img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+    .brand ul {
+        flex-wrap: wrap;
+        padding: 0 !important;
+    }
+
+    .brand ul li {
+        width: 33.33% !important;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    footer .row.p-5 {
+        padding: 2rem 1rem 0 1rem !important;
+        gap: 15px;
+    }
+}
