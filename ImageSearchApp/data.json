@@ -1,0 +1,97 @@
+[
+    {
+        "id": "1",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car1.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    },
+    {
+        "id": "2",
+        "car_name": "Porsche",
+        "car_type": "Taycan",
+        "image": "car2.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$114,900"
+    },
+    {
+        "id": "3",
+        "car_name": "Porsche",
+        "car_type": "Turbo S Cross",
+        "image": "car2.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    },
+    {
+        "id": "4",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car3.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "5",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car4.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "6",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car5.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "7",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car6.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "8",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car8.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "9",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car9.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }, {
+        "id": "10",
+        "car_name": "Porsche",
+        "car_type": "Turbo S",
+        "image": "car10.png",
+        "time": "3.7 Sec",
+        "speed": "356 Km/h",
+        "type": "Electric",
+        "price": "$175,900"
+    }
+
+]
